@@ -12,35 +12,33 @@
 
     }
 
-    // border: 2px black solid;
-
     margin: 20px 0;
     padding: 20px 0;
+    .custom-layout(column, center);
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    justify-content:center;
     align-items: center;
     background: #f4f4f4;
-
-
-
-
-
+  
+    
 
     nav {
         margin-left: 62px;
         padding:20px;
+
+        @media @mobile {
+            padding:5px;
+                
+          }
         
         
     
         @media @mobile {
           margin-left: 0;
-          flex-direction: column;
+
+          .custom-layout(row, center);
           align-items: center;
-          
-          
-          
+             
             
         }
     
@@ -54,7 +52,7 @@
 
           @media @mobile {
             margin-left: 0;
-            flex-direction: column;
+            .custom-layout(column, center);
             align-items: center;
             
             
@@ -76,9 +74,10 @@ header {
         border-radius: 10px;
 
         @media @mobile {
-            width: 90%;
+            // width: 100%;
             // margin-left: 22px;
-            margin: 0 20px;
+            // margin: 0 auto;
+            .center();
             
         }
     }
@@ -88,6 +87,7 @@ header {
     @media @mobile {
         margin:20px;
         padding: 15px;
+        .center();
         
     }
 
