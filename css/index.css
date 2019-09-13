@@ -163,10 +163,10 @@ p {
 .title-nav {
   margin: 20px 0;
   padding: 20px 0;
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   background: #f4f4f4;
 }
@@ -181,8 +181,15 @@ p {
 }
 @media (max-width:500px) {
   .title-nav nav {
+    padding: 5px;
+  }
+}
+@media (max-width:500px) {
+  .title-nav nav {
     margin-left: 0;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -196,7 +203,9 @@ p {
 @media (max-width:500px) {
   .title-nav nav a {
     margin-left: 0;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 }
@@ -206,14 +215,16 @@ header #space {
 }
 @media (max-width:500px) {
   header #space {
-    width: 90%;
-    margin: 0 20px;
+    width: 100%;
+    margin: auto;
   }
 }
 @media (max-width:500px) {
   header .text-lift {
     margin: 20px;
     padding: 15px;
+    width: 100%;
+    margin: auto;
   }
 }
 footer {
@@ -269,6 +280,8 @@ footer {
   .home .walk {
     display: flex;
     flex-direction: column-reverse;
+    width: 100%;
+    margin: auto;
   }
 }
 .home .walk .walk-text {
@@ -277,6 +290,7 @@ footer {
 @media (max-width:500px) {
   .home .walk .walk-text {
     width: 100%;
+    margin: auto;
   }
 }
 .home .walk .walk-text .btn {
@@ -313,7 +327,7 @@ footer {
 @media (max-width:500px) {
   .home .walk .walk-img {
     width: 100%;
-    margin: auto auto;
+    margin: auto;
   }
 }
 .home .walk .walk-img img {
