@@ -32,15 +32,31 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
+What is the difference between an adaptive website and a fully responsive website?
 
-2. Describe what it means to be mobile first vs desktop first.
+An adaptive web design has different layouts which will fit different screen sizes such as desktop, tablets, and phones. Developers will think carefully about how the website should look like in each specific screen sizes and will adapt its layout using media query. 
+A responsive website has been designed to work on most screens sizes. The design needs to be carefully studied in order to have a well functioning layout that fits most screens. Compared to the adaptive website, a responsive website doesn’t have different layouts but more flawless boxes and grids. 
+ 
+ 
+Describe what it means to be mobile first vs desktop first.
 
-3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+Mobile first means that the website design was the first design to fit mobile screens and adjusted to fit other screens
+Desktop first means that the website was the first design to fit the screen of larger devices such as a desktop and then adjusted to mobile. 
+ 
+What does font-size: 62.5% in the html tag do for us when using rem units?
 
-4. How would you describe preprocessing to someone new to CSS?
+Setting the font-size: 62.5% in the html will allow us to have an easier time while converting px and rem. Indeed, It is easier because 62.5% of 16px is 10px. In this case 1 rem=10px. 
 
-5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+How would you describe preprocessing to someone new to CSS?
+
+Preprocessing has 3 components: first, the LESS which is the syntax in where we write the code in, second NODE which is going to be the compiler for our LESS and finally CSS which is the output that we get from the compiler. In order words, preprocessing will take some data or value  and transform them into something else. Using Less is  mixins and To be consumed by the compiler
+ 
+What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+I enjoyed the fact that the terminal tell you when you have a syntax error in your code and it will stop preprocessing and compiling your code. 
+
+
+
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
